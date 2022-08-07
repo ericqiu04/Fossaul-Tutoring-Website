@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin:auto;
+    text-align:center;
+    font-family: 'Catamaran';
+    font-size:1.25em;
+}
+
+.writing {
+    width:85%;
+    margin-left:100px;
+}
+
+.pgm-btn {
+    background-color: #e09d17;
+    width:50%;
+    box-shadow: 0 3px #865e0e;
+    transition:0.5s;
+}
+.pgm-btn:hover {
+    background-color: #ca8d15;
+    transform: scale(1.2);
+}

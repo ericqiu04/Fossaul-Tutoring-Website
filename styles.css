@@ -1,0 +1,33 @@
+
+
+
+.picture {
+    background-image:url("Untitled-2.jpg");
+}
+.panel{
+    
+    text-align:center;
+    padding: 20px 30px;
+    display:inline-block;
+
+}
+.panel img{
+    width:375px;
+    height:500px;
+    padding-bottom: 20px;
+}
+.imgPanels{
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+
+/**Navigation Bar**/
+.navbar-static-top{
+    height:100px;
+}
+
+/**Footer**/
+.footer{
+    text-align:center;
+}

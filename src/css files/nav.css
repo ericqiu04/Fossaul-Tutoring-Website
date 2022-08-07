@@ -1,0 +1,11 @@
+.n-item {
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.n-item:hover {
+  transform: scale(1.2);
+}
+
+.n-item:visited {
+  text-decoration: none;
+}

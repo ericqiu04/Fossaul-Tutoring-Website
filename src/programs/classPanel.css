@@ -1,0 +1,22 @@
+
+.classImages img {
+  margin: 0 30px;
+}
+
+.classText {
+  text-align:left;
+
+}
+
+.outerDiv {
+    width: 60%;
+    margin:auto;
+    display:grid;
+    
+}
+.image1 {
+   justify-self:left;
+}
+.image2{
+    justify-self: right;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../css files/members.css'
 function Panel(props){
     const handleClick = event =>{
         alert("Image Clicked");

@@ -5,6 +5,8 @@ import { Nav, Navbar, Container } from "react-bootstrap/";
 import ContactUs from "../Extra Stuff/contact-us";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
+
 function NavigationBar() {
   const [buttonPopup, setButtonPopup] = useState(false);
 
@@ -32,8 +34,8 @@ function NavigationBar() {
       >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Brand href="#home">
-            <img
+          <Navbar.Brand href="/">
+           <img
               src={logo}
               width="30"
               height="30"
@@ -43,17 +45,16 @@ function NavigationBar() {
             Fossaul Tutoring
           </Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href = "/">Home</Nav.Link>
             <Nav.Link href="#about-us">About Us</Nav.Link>
             <Nav.Link href="#team">Team</Nav.Link>
-            <Nav.Link href="#">Classes</Nav.Link>
+            <Nav.Link href = "/classes">Classes</Nav.Link>
             <Nav.Link href="#" onClick={() => setButtonPopup(true)}>
               Contact Us
             </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-
       <ContactPop trigger={buttonPopup} setTrigger={setButtonPopup}>
         <ContactUs/>
       </ContactPop>

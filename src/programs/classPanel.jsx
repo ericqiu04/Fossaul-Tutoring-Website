@@ -1,5 +1,6 @@
 import React from "react";
-import "./classPanel.css";
+import "./classPanel.css"
+
 function ClassPanel(props) {
   return (
     <div className = "outerDiv">

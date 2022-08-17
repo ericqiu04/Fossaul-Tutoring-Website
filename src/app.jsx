@@ -1,26 +1,23 @@
 import React from "react";
-import Header from "./Header/header";
-import AboutUs from "./Header/aboutUs";
-import Founders from "./Members/founders";
-import Directors from "./Members/directors";
-import Tutor from "./Members/tutors";
-import Footer from "./Footer/footer";
-/*
-  <AboutUs/>
-  <Founders/>
-    <Directors/>
-    <Tutor/>
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NavigationBar from "../src/Header/nav";
+import Home from "./home";
+import Programs from "./programs/programs";
 
-    */
 function App() {
   return (
     <div>
-      <Header />
-      <AboutUs />
-      <Founders />
-      <Directors />
-      <Tutor />
-      <Footer />
+    <NavigationBar/>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/classes">
+            <Programs />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

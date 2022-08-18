@@ -1,5 +1,5 @@
 
-import classPictures from './pictures.JS'
+import classPictures from './pictures.js'
 import CreateClassPanel from './createClassPanel'
 
 

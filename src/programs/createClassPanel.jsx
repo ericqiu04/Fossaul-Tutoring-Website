@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ClassPanel from "./classPanel";
 import SinglePanel from "./singlePanel";
 
@@ -14,15 +14,13 @@ function CreateClassPanel(pictures) {
     );
   } else {
     return (
-      <>
-        <ClassPanel
-          key={pictures.id}
-          number={pictures.id}
-          subject={pictures.subject}
-          imgURL1={pictures.img1}
-          imgURL2={pictures.img2}
-        />
-      </>
+      <ClassPanel
+        key={pictures.id}
+        number={pictures.id}
+        subject={pictures.subject}
+        imgURL1={pictures.img1}
+        imgURL2={pictures.img2}
+      />
     );
   }
 }

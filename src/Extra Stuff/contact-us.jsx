@@ -1,6 +1,6 @@
 import React from 'react'
-import './contact.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import './contact.scss'
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 function ContactUs() {
     return (
@@ -8,26 +8,22 @@ function ContactUs() {
         <form>
           <div class="row">
             <div class="input-stuff">
-              <input type="text" id="Name" placeholder="" />
-              <label for="name"
-                ><i class="fa-solid fa-user"></i> First Name</label
-              >
+              <input type="text" id="Name" placeholder="First Name" />
+              
             </div>
             <div class="input-stuff">
-              <input type="text" id="Name" placeholder="" />
-              <label for="name"><FontAwesomeIcon icon="faUser" /> Last Name</label>
+              <input type="text" id="Name" placeholder="Last Name" />
+              
             </div>
           </div>
   
           <div class="input-stuff">
-            <input type="email text" id="email" placeholder="" />
-            <label for="email"><i class="fa-solid fa-envelope"></i> E-Mail</label>
+            <input type="email text" id="email" placeholder="E-Mail" />
+           
           </div>
           <div class="input-stuff">
-            <textarea type="text" id="message" placeholder=""></textarea>
-            <label for="message"
-              ><i class="fa-solid fa-message"></i> Message</label
-            >
+            <textarea type="text" id="message" placeholder="Message"></textarea>
+            
           </div>
           <button class = "submit" type="submit">SUBMIT</button>
         </form>

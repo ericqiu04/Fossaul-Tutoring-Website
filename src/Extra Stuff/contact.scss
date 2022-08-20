@@ -1,0 +1,74 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer-box {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+}
+.input-stuff {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  font-size: 15px;
+  outline-color: #ba9d0d;
+  @include border-radius(8px);
+  box-shadow: 0 1px 1px rgba(black, 0.5);
+  display: block;
+}
+textarea {
+  resize: none;
+}
+input:focus {
+  outline-color: #ba9d0d;
+}
+
+
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+.submit {
+  padding: 10px 0;
+  color: #ba9d0d;
+  outline: none;
+  border: 1px solid #ba9d0d;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-stuff {
+  flex-basis: 50%;
+}

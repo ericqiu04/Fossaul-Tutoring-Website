@@ -15,7 +15,7 @@ function AboutUs() {
               offer free lessons for a variety of grades. Since May 8th, 2021,
               the program ran 54 classes and have had around 1080 attendances.
             </p>
-            <Button className = "pgm-btn">Programs</Button>
+            <Button className = "pgm-btn" href = "/classes">Programs</Button>
           </div>
         </Col>
         <Col>

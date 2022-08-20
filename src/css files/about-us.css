@@ -22,6 +22,7 @@
     width:50%;
     box-shadow: 0 3px #865e0e;
     transition:0.5s;
+    border: none;
 }
 .pgm-btn:hover {
     background-color: #ca8d15;

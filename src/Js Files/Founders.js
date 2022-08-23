@@ -1,14 +1,16 @@
+import eric from '../pictures/Founder/eric.png'
+import max from '../pictures/Founder/max.png'
 const founders = [
     {
         id: 1,
         name: "Eric Qiu",
-        img:"../src/pictures/Founder/eric.jpg",
+        img:eric,
         subjects: "Math, Coding"
     },
     {
         id: 2,
         name: "Max Luo",
-        img: "../src/pictures/Founder/max.jpg",
+        img: max,
         subjects: "Math, Coding"
     }
 ];

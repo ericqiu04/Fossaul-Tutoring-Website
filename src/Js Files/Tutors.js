@@ -1,22 +1,28 @@
+import brian from '/src/pictures/Tutor/brian.png'
+import ida from '/src/pictures/Tutor/Ida.png'
+import william from '/src/pictures/Tutor/william.png'
+import leo from '/src/pictures/Tutor/leo.png'
+
+
 const tutors = [
     {
         name: "Ida Luo",
-        img: "../src/pictures/Tutor/Ida.jpg",
+        img: ida,
         subjects: "Math"
     },
     {
         name: "William Zeng",
-        img: "../src/pictures/Tutor/william.jpg",
+        img: william,
         subjects: "Coding"
     },
     {
         name: "Brian Zhu",
-        img: "../src/pictures/Tutor/brian.jpg",
+        img: brian,
         subjects: "Math"
     },
     {
         name: "Leo Zhou",
-        img: "../src/pictures/Tutor/leo.jpg",
+        img: leo,
         subjects: "Math"
     }
 ];
